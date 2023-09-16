@@ -4,8 +4,9 @@ from django.conf.urls.i18n import i18n_patterns
 
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("", include("core.urls", namespace="core")),
 ]
 
-urlpatterns += i18n_patterns(
-  path("", include("core.urls", namespace="student"))
-  )
+# urlpatterns += i18n_patterns(
+#     path("", include("core.urls", namespace="core"))
+# )
