@@ -8,17 +8,17 @@ MAX_INST_CITY = 15
 MAX_INST_PIN_CODE = 15
 
 
-INSTITUTE_CATEGORY = (
-    (1, "Pre-Primary School"),
-    (2, "Primary School"),
-    (3, "High School"),
-    (4, "Pre_University College"),
-    (5, "Bacholer College"),
-    (6, "Masters College"),
-    (7, "PHD-University")
+CURCULAM_CATEGORY = (
+    (1, "1: Pre-Primary School"),
+    (2, "2: Primary School"),
+    (3, "3: High School"),
+    (4, "4: Pre_University College"),
+    (5, "5: Bacholer College"),
+    (6, "6: Masters College"),
+    (7, "7: PHD-University")
 )
 
-"studies"
+"curiculam"
 
-MAX_STUDIES_ID = 20
-MAX_STUDIES_NAME = 50
+MAX_CURICULAM_ID = 20
+MAX_CURICULAM_NAME = 50
