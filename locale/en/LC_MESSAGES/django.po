@@ -1,0 +1,72 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-17 01:02+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\core\templates\core\dashboard.html:10 .\core\views.py:16
+msgid "hello"
+msgstr "This Is Hello"
+
+#: .\core\views.py:8
+
+msgid "stu_id"
+msgstr "Student ID"
+
+msgid "stu_first_name"
+msgstr "First Name"
+
+msgid "stu_last_name"
+msgstr "Last Name"
+
+msgid "stu_date_of_birth"
+msgstr "Date Of Birth"
+
+msgid "stu_email"
+msgstr "Student Email"
+
+msgid "stu_mobile_no"
+msgstr "Student Mobil No"
+
+msgid "stu_gender"
+msgstr "Gender"
+
+msgid "stu_permanent_address"
+msgstr "Permanent Address"
+
+msgid "stu_current_address"
+msgstr "Current Address"
+
+msgid "stu_country"
+msgstr "Country"
+
+msgid "stu_state"
+msgstr "State"
+
+msgid "stu_city"
+msgstr "City"
+
+msgid "stu_pin_code"
+msgstr "PIN Code"
+
+msgid "stu_photo"
+msgstr "Student Photo"
+
+msgid "stu_standard"
+msgstr "Standard"
+
+msgid "stu_standard"
+msgstr "Standard"

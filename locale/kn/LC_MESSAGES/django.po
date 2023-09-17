@@ -1,0 +1,67 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-17 01:03+0530\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+#: .\core\templates\core\dashboard.html:10 .\core\views.py:16
+msgid "hello"
+msgstr ""
+
+#: .\core\views.py:8
+msgid "name"
+msgstr ""
+msgid "stu_id"
+msgstr "ವಿದ್ಯಾರ್ಥಿ ಐಡಿ"  # Student ID
+
+msgid "stu_first_name"
+msgstr "ಮೊದಲ ಹೆಸರು"  
+
+msgid "stu_last_name"
+msgstr "ಕೊನೆಯ ಹೆಸರು"  
+
+msgid "stu_date_of_birth"
+msgstr "ಹುಟ್ಟಿದ ದಿನಾಂಕ"  
+
+msgid "stu_email"
+msgstr "ವಿದ್ಯಾರ್ಥಿ ಇಮೇಲ್"  
+
+msgid "stu_mobile_no"
+msgstr "ವಿದ್ಯಾರ್ಥಿ ಮೊಬೈಲ್ ಸಂಖ್ಯೆ" 
+
+msgid "stu_gender"
+msgstr "ಲಿಂಗ"  
+
+msgid "stu_permanent_address"
+msgstr "ಶಾಶ್ವತ ವಿಳಾಸ"  
+
+msgid "stu_current_address"
+msgstr "ಪ್ರಸ್ತುತ ವಿಳಾಸ" 
+
+msgid "stu_country"
+msgstr "ದೇಶ"  
+
+msgid "stu_state"
+msgstr "ರಾಜ್ಯ"  
+
+msgid "stu_city"
+msgstr "ನಗರ"  
+
+msgid "stu_pin_code"
+msgstr "ಪಿನ್ ಕೋಡ್"  
+
+msgid "stu_photo"
+msgstr "ವಿದ್ಯಾರ್ಥಿ ಫೋಟೋ"  
