@@ -17,6 +17,9 @@ class StudentAdmin(admin.ModelAdmin):
 			'fields': (('mobile_no', 'email'), ('country', 'state',),)
 		}),
 		('Additional Information', {
+			'fields': (('mother_name', 'father_name'), ("parents_contact_no"),)
+		}),
+		('Additional Information', {
 			'fields': (("photo",), ('current_address', 'permanent_address'),)
 		}),
 	)
