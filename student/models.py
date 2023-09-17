@@ -1,7 +1,12 @@
 from django.db import models
 from .const import GENDER_CHOICES
 
-# Create your models here.
+def upload_path(self, filename):
+    try: 
+        path = f"photos/{self.__class__.__name__}/{self.stu_id}.jpg"
+    except Exception as e:
+        print("-----------------------")
+    return str(path)
 
 class Student(models.Model):
     stu_id = models.CharField(max_length=20, unique=True)
@@ -17,3 +22,4 @@ class Student(models.Model):
     state = models.IntegerField()
     city = models.CharField(max_length=100)
     pin_code = models.CharField(max_length=10)  
+    photo = models.ImageField(upload_to=upload_path)

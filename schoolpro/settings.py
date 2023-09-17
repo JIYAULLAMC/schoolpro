@@ -121,6 +121,8 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
+# translation or internationalizaton setting 
+
 LANGUAGE_CODE = "en"
 
 LANGUAGES = [
@@ -131,3 +133,8 @@ LANGUAGES = [
 LOCALE_PATHS = [
     BASE_DIR / "locale",
 ]
+
+# media files setting
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR/ 'media'
