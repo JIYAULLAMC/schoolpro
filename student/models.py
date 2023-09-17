@@ -10,7 +10,7 @@ def upload_path(self, filename):
     return str(path)
 
 class Student(models.Model):
-    stu_id = models.CharField(_("stu_id"), max_length=20, unique=True )
+    stu_id = models.CharField(_("stu_id"), unique=True, max_length=consts.MAX_STU_ID)
     first_name = models.CharField(_("stu_first_name"), max_length=consts.MAX_STU_FIRST_NAME)
     last_name = models.CharField(_("stu_last_name"), max_length=consts.MAX_STU_LAST_NAME, blank=True, null=True)
     date_of_birth = models.DateField(_("stu_date_of_birth"), blank=True, null=True)
