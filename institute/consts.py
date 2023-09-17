@@ -1,4 +1,4 @@
-'Institution'
+'institute'
 
 MAX_INST_ID = 20
 MAX_INST_NAME = 50
@@ -18,3 +18,7 @@ INSTITUTE_CATEGORY = (
     (7, "PHD-University")
 )
 
+"studies"
+
+MAX_STUDIES_ID = 20
+MAX_STUDIES_NAME = 50
