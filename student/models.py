@@ -11,9 +11,10 @@ def upload_path(self, filename):
 
 class Student(models.Model):
     stu_id = models.CharField(_("stu_id"), max_length=20, unique=True )
-    first_name = models.CharField(_("stu_first_name"),max_length=consts.MAX_STU_FIRST_NAME)
+    first_name = models.CharField(_("stu_first_name"), max_length=consts.MAX_STU_FIRST_NAME)
     last_name = models.CharField(_("stu_last_name"), max_length=consts.MAX_STU_LAST_NAME, blank=True, null=True)
     date_of_birth = models.DateField(_("stu_date_of_birth"), blank=True, null=True)
+    standard = models.IntegerField(_("stu_standard"), choices=consts.STANDARD_CHOICES)
     email = models.EmailField(_("stu_email"), max_length=consts.MAX_STU_EMAIL, blank=True, null=True)
     mobile_no = models.BigIntegerField(_("stu_mobile_no"), )
     gender = models.IntegerField(_("stu_gender"), choices=consts.GENDER_CHOICES, blank=True, null=True)
