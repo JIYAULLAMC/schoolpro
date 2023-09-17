@@ -1,5 +1,5 @@
 from django.db import models
-from . import consts
+from .. import consts
 from django.utils.translation import gettext as _
 
 def upload_path(self, filename):

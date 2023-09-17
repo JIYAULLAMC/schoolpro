@@ -2,6 +2,7 @@ from django.db import models
 from .. import consts
 from django.utils.translation import gettext as _
 from student import consts as st_consts
+from .curiculam_models import Curiculam
 
 def upload_path(self, filename):
     try: 
@@ -13,7 +14,7 @@ def upload_path(self, filename):
 class Institute(models.Model):
     inst_id = models.CharField(_("inst_id"), unique=True, max_length=consts.MAX_INST_ID)
     inst_name = models.CharField(_("inst_name"), max_length=consts.MAX_INST_NAME )
-    category = models.IntegerField(_("inst_category"),choices=consts.CURCULAM_CATEGORY)
+    inst_curiculams = models.ManyToManyField(Curiculam)
     inst_email = models.EmailField(_("inst_email"), max_length=consts.MAX_INST_EMAIL, blank=True, null=True)
     contact_no = models.BigIntegerField(_("inst_contact_no"), )
     address = models.CharField(_("inst_address"), max_length=consts.MAX_INST_ADDRESS, blank=True, null=True)

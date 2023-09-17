@@ -1,10 +1,12 @@
 from django.contrib import admin
-from .models import Student
+from ..models.student_models import Student
+from ..forms import StudentForm
 
 
 @admin.register(Student)
 class StudentAdmin(admin.ModelAdmin):
 	list_display = ["id", "stu_id", "first_name", "last_name", "date_of_birth", "standard", "email", "mobile_no", "gender", "permanent_address", "current_address", "country", "state", "city", "pin_code", "photo",]
+	form = StudentForm
 
 	fieldsets = (
 		('Basic Information', {

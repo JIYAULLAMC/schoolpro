@@ -1,6 +1,6 @@
 from django.contrib import admin
 from ..models import Curiculam
-
+from ..forms import CuriculamForm
 
 @admin.register(Curiculam)
 class CuriculamAdmin(admin.ModelAdmin):
