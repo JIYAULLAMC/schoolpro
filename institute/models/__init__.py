@@ -1,0 +1,1 @@
+from .institute_models import Institute

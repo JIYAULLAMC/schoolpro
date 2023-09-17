@@ -1,11 +1,11 @@
 from django.db import models
-from . import consts
+from .. import consts
 from django.utils.translation import gettext as _
 from student import consts as st_consts
 
 def upload_path(self, filename):
     try: 
-        path = f"photos/{self.__class__.__name__}/{self.stu_id}.jpg"
+        path = f"photos/{self.__class__.__name__}/{self.inst_id}.jpg"
     except Exception as e:
         print("-----------------------")
     return str(path)
