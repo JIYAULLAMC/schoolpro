@@ -5,7 +5,7 @@ from ..forms import StudentForm
 
 @admin.register(Student)
 class StudentAdmin(admin.ModelAdmin):
-	list_display = ["id", "stu_id", "first_name", "last_name", "date_of_birth", "standard", "email", "mobile_no", "gender", "permanent_address", "current_address", "country", "state", "city", "pin_code", "photo",]
+	list_display = ["id", "stu_id", "first_name", "last_name", "stu_institute", "date_of_birth", "standard", "email", "mobile_no", "gender", "permanent_address", "current_address", "country", "state", "city", "pin_code", "photo",]
 	form = StudentForm
 
 	fieldsets = (
@@ -13,7 +13,7 @@ class StudentAdmin(admin.ModelAdmin):
 			'fields': (('stu_id', 'standard'),),
 		}),
 		('Additional Information', {
-			'fields': (('first_name', 'last_name'), ('date_of_birth', 'gender'),)
+			'fields': (('first_name', 'last_name'), ( 'stu_institute','date_of_birth', 'gender'),)
 		}),
 		('Additional Information', {
 			'fields': (('mobile_no', 'email'), ('country', 'state',),)

@@ -23,3 +23,6 @@ class Institute(models.Model):
     city = models.CharField(_("inst_city"), max_length=consts.MAX_INST_CITY, blank=True, null=True)
     pin_code = models.CharField(_("inst_pin_code"), max_length=consts.MAX_INST_PIN_CODE, blank=True, null=True)  
     photo = models.ImageField(_("inst_photo"), upload_to=upload_path, blank=True, null=True)
+
+    def __str__(self):
+        return f"{self.inst_id}_{self.inst_name}"

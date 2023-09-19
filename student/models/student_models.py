@@ -1,6 +1,7 @@
 from django.db import models
 from .. import consts
 from django.utils.translation import gettext as _
+from institute.models import Institute
 
 def upload_path(self, filename):
     try: 
@@ -29,3 +30,7 @@ class Student(models.Model):
     city = models.CharField(_("stu_city"), max_length=consts.MAX_STU_CITY, blank=True, null=True)
     pin_code = models.CharField(_("stu_pin_code"), max_length=consts.MAX_STU_PIN_CODE, blank=True, null=True)  
     photo = models.ImageField(_("stu_photo"), upload_to=upload_path, blank=True, null=True)
+    stu_institute = models.ForeignKey(Institute, on_delete=models.PROTECT)
+
+    def __str__(self):
+        return f"{self.stu_id}_{self.first_name}"
