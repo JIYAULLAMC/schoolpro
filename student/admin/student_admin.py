@@ -10,7 +10,7 @@ class StudentAdmin(admin.ModelAdmin):
 
 	fieldsets = (
 		('Basic Information', {
-			'fields': (('stu_id', 'standard'),),
+			'fields': (('stu_id', 'standard', 'student_institute'),),
 		}),
 		('Additional Information', {
 			'fields': (('first_name', 'last_name'), ( 'stu_institute','date_of_birth', 'gender'),)

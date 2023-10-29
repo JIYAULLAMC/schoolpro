@@ -31,6 +31,15 @@ class Student(models.Model):
     pin_code = models.CharField(_("stu_pin_code"), max_length=consts.MAX_STU_PIN_CODE, blank=True, null=True)  
     photo = models.ImageField(_("stu_photo"), upload_to=upload_path, blank=True, null=True)
     stu_institute = models.ForeignKey(Institute, on_delete=models.PROTECT)
+    temp_stu_institute = models.IntegerField()
+    
 
     def __str__(self):
         return f"{self.stu_id}_{self.first_name}"
+    
+    def student_institute(self, *args, **kwargs):
+        print("self -----------------", self)
+        print("args -------------", args)
+        print("kwargs ---------------", kwargs)
+        temp_objects = [(1, "morning"), (2, "after noon"), (3, "evenig"), (4, "night")]
+        return temp_objects
